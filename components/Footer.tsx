@@ -14,9 +14,9 @@ export default function Footer() {
           </span>
           <a
             className="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
-            href="mailto:hello@fajaryusuf.com"
+            href="mailto:mfajaryusuff@gmail.com"
           >
-            hello@fajaryusuf.com
+            mfajaryusuff@gmail.com
           </a>
         </div>
         <div className="flex flex-col sm:flex-row gap-8 sm:gap-12 w-full sm:w-auto">
