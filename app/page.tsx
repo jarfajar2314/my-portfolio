@@ -56,6 +56,34 @@ export default function Home() {
         </div>
       </section>
 
+      {/* About Section */}
+      <section className="py-16 md:py-24 bg-surface-bright px-margin-mobile md:px-margin-desktop">
+        <div className="max-w-container-max mx-auto">
+          <ScrollReveal>
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-10 md:gap-16 items-center">
+              <div className="md:col-span-2 flex justify-center md:justify-start md:ml-6">
+                <div className="w-64 h-64 md:w-80 md:h-80 rounded-3xl bg-surface-variant overflow-hidden soft-shadow flex items-center justify-center animate-float-slow hover:scale-105 transition-transform duration-500">
+                  <span className="font-headline-sm text-headline-sm font-bold text-on-surface-variant opacity-50 select-none">
+                    [Photo]
+                  </span>
+                </div>
+              </div>
+              <div className="md:col-span-3 flex flex-col gap-6">
+                <span className="font-label-md text-label-md uppercase tracking-widest text-primary font-bold">
+                  About Me
+                </span>
+                <h2 className="font-headline-sm text-headline-sm md:text-headline-sm font-bold text-on-surface">
+                  Engineering robust systems for the real world
+                </h2>
+                <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                  I build robust, high-availability software systems and data pipelines that bridge the gap between industrial automation and modern web architectures. With a solid foundation in Computer Science and hands-on experience in full-stack development, database management, and containerized workflows, I focus on turning complex technical challenges into scalable, efficient digital solutions.
+                </p>
+              </div>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* Projects Section (Bento Grid) */}
       <section className="py-16 md:py-20 bg-surface px-margin-mobile md:px-margin-desktop" id="work">
         <div className="max-w-container-max mx-auto">
@@ -118,6 +146,113 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Open Source Section */}
+      <section className="py-16 md:py-24 bg-surface-bright px-margin-mobile md:px-margin-desktop">
+        <div className="max-w-container-max mx-auto">
+          <ScrollReveal className="mb-12">
+            <h2 className="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold tracking-tight text-on-surface">
+              Open Source
+            </h2>
+            <p className="font-body-lg text-body-lg text-on-surface-variant mt-4 max-w-xl">
+              Tools and libraries I build and maintain for the community.
+            </p>
+          </ScrollReveal>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+            <ScrollReveal delayClass="animation-delay-100">
+              <a
+                href="https://github.com/jarfajar2314/ts-workflow-engine"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block h-full bg-surface-container-lowest rounded-3xl p-8 soft-shadow border border-on-surface/5 hover:border-primary/20 transition-all hover-lift group"
+              >
+                <div className="flex flex-col h-full gap-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <span className="material-symbols-outlined text-primary" style={{ fontVariationSettings: "'FILL' 1" }}>alt_route</span>
+                  </div>
+                  <div>
+                    <h3 className="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                      ts-workflow-engine
+                    </h3>
+                    <p className="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed">
+                      A lightweight, code-first, framework-agnostic workflow and approval engine for Node.js.
+                    </p>
+                  </div>
+                  <div className="mt-auto flex items-center gap-4 pt-2">
+                    <span className="text-label-md text-on-surface-variant/60">TypeScript</span>
+                    <span className="w-1 h-1 bg-on-surface-variant/20 rounded-full"></span>
+                    <span className="text-label-md text-on-surface-variant/60">MIT</span>
+                    <span className="w-1 h-1 bg-on-surface-variant/20 rounded-full"></span>
+                    <span className="text-label-md text-primary font-bold group-hover:translate-x-1 transition-transform">
+                      GitHub →
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </ScrollReveal>
+            <ScrollReveal delayClass="animation-delay-200">
+              <a
+                href="https://github.com/jarfajar2314/nextjs-dashboard"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block h-full bg-surface-container-lowest rounded-3xl p-8 soft-shadow border border-on-surface/5 hover:border-primary/20 transition-all hover-lift group"
+              >
+                <div className="flex flex-col h-full gap-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <span className="material-symbols-outlined text-primary" style={{ fontVariationSettings: "'FILL' 1" }}>dashboard</span>
+                  </div>
+                  <div>
+                    <h3 className="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                      nextjs-dashboard
+                    </h3>
+                    <p className="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed">
+                      Next.js dashboard template with Better Auth integration for rapid admin panel development.
+                    </p>
+                  </div>
+                  <div className="mt-auto flex items-center gap-4 pt-2">
+                    <span className="text-label-md text-on-surface-variant/60">TypeScript</span>
+                    <span className="w-1 h-1 bg-on-surface-variant/20 rounded-full"></span>
+                    <span className="text-label-md text-primary font-bold group-hover:translate-x-1 transition-transform">
+                      GitHub →
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </ScrollReveal>
+            <ScrollReveal delayClass="animation-delay-300">
+              <a
+                href="https://github.com/jarfajar2314/express-jwt"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block h-full bg-surface-container-lowest rounded-3xl p-8 soft-shadow border border-on-surface/5 hover:border-primary/20 transition-all hover-lift group"
+              >
+                <div className="flex flex-col h-full gap-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <span className="material-symbols-outlined text-primary" style={{ fontVariationSettings: "'FILL' 1" }}>lock</span>
+                  </div>
+                  <div>
+                    <h3 className="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                      express-jwt
+                    </h3>
+                    <p className="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed">
+                      Node.js Express starter template with JWT authentication boilerplate pre-configured.
+                    </p>
+                  </div>
+                  <div className="mt-auto flex items-center gap-4 pt-2">
+                    <span className="text-label-md text-on-surface-variant/60">JavaScript</span>
+                    <span className="w-1 h-1 bg-on-surface-variant/20 rounded-full"></span>
+                    <span className="text-label-md text-on-surface-variant/60">3 stars</span>
+                    <span className="w-1 h-1 bg-on-surface-variant/20 rounded-full"></span>
+                    <span className="text-label-md text-primary font-bold group-hover:translate-x-1 transition-transform">
+                      GitHub →
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
       {/* Experience / Call to Action Section */}
       <section className="py-20 md:py-24 bg-primary-container text-on-primary overflow-hidden relative" id="services">
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
@@ -131,7 +266,7 @@ export default function Home() {
               </p>
               <div className="flex flex-wrap gap-6" id="contact">
                 <Link
-                  href="mailto:hello@fajaryusuf.com"
+                  href="mailto:mfajaryusuff@gmail.com"
                   className="bg-surface-container-lowest text-primary font-label-md text-label-md px-10 py-5 rounded-2xl soft-shadow hover-lift hover:shadow-lg hover:shadow-black/10 transition-all"
                 >
                   Get in touch
@@ -140,7 +275,7 @@ export default function Home() {
                   <div className="w-12 h-12 rounded-full border border-on-primary/20 flex items-center justify-center">
                     <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>mail</span>
                   </div>
-                  <span className="font-label-md text-label-md">hello@fajaryusuf.com</span>
+                  <span className="font-label-md text-label-md">mfajaryusuff@gmail.com</span>
                 </div>
               </div>
             </ScrollReveal>
